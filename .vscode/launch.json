@@ -1,0 +1,41 @@
+{
+  // Configuración de depuración en Visual Studio Code
+  // Permite ejecutar el programa paso a paso
+
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run C Program",
+
+      // Tipo de depurador para C/C++
+      "type": "cppdbg",
+
+      // Modo de ejecución: iniciar programa
+      "request": "launch",
+
+      // Archivo ejecutable que se generará
+      "program": "${workspaceFolder}\\${fileBasenameNoExtension}.exe",
+
+      "args": [],
+
+      // No detenerse al inicio del programa
+      "stopAtEntry": false,
+
+      // Carpeta de trabajo del proyecto
+      "cwd": "${workspaceFolder}",
+
+      "environment": [],
+
+      // Consola externa para ver la salida
+      "externalConsole": true,
+
+      "MIMode": "gdb",
+
+      // Ruta del depurador incluido en winlibs
+      "miDebuggerPath": "C:\\winlibs\\bin\\gdb.exe",
+
+      // Tarea que se ejecuta antes de depurar (compilar)
+      "preLaunchTask": "Compilar C"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  // Configuración de tareas automáticas
+  // Se utiliza para compilar el programa con un solo comando
+
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar C",
+
+      // Tipo de tarea en terminal
+      "type": "shell",
+
+      // Comando del compilador GCC
+      "command": "gcc",
+
+      // Argumentos: archivo actual y nombre del ejecutable
+      "args": [
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.exe"
+      ],
+
+      "group": {
+      // Agrupa esta tarea dentro de las tareas de compilación (build)
+        "kind": "build",
+      // Indica que esta es la tarea principal por defecto
+      // Se ejecutará automáticamente al usar Ctrl + Shift + B
+        "isDefault": true
+      }
+    }
+  ]
+}
+  
