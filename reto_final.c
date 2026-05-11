@@ -6,11 +6,15 @@
 #include <stdio.h>
 
 int main() {
-    printf("hola, mi nombre es michelle padilla\n");
-    printf("tengo 19 años\n");
-    printf("vivo en madrid");
-    printf("mido 1.52 metros\n");
+    char nombre []= "michelle padilla";
+    char ciudad []= "madrid";
+    int edad = 19;
+    float altura= 1.52;
+    
+    printf("hola, mi nombre es %s\n", nombre);
+    printf("tengo %d anos\n", edad);
+    printf("vivo en %s\n", ciudad);
+    printf("mido %.2f metros\n", altura);
 
     return 0; 
 }
-
