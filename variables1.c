@@ -4,11 +4,11 @@ int main() {
 // DECLARACION de una VARIABLE TIPO int (interger) es numerica y es un numero entero sin decimales
 // TIPO DE VARIALE + NOMBRE DELA VARIABLE + VALOR DE LA VARIABLE
 //entrada de datos
-    int numeroAlumnos = 20; // PUNTO Y COMA PARA FINALIZAR LA SENTENCIA
+    int numeroAlumnos = 20; //PUNTO Y COMA PARA FINALIZAR LA SENTENCIA
     //procesamiento de datos
     //funcion imprimir en pantalla con una opcion dentro del texto
     //para sustituir por el valor de la variable se usa el simbolo % seguido de la letra que corresponde al tipo de dato
-    printf("La edad es: %d\n", numeroAlumnos); 
+    printf("El numero de alumnos es: %d \n", numeroAlumnos); //%d para int, %f para float, %c para char, %s para string
 //salida de datos
     return 0;
 }
