@@ -3,14 +3,13 @@
 #include <stdio.h>
 
 int main() {
-    int numInicial: 1;
-    int numFinal: 50;
-    scanf();
+    int multiplos= 3;
 
-    if() {
-
+    while(multiplos <= 50) {
+        printf("multiplos: %d \n", multiplos);
+        multiplos += 3;
     }
 
-    return 0
+    return 0;
 
 }
